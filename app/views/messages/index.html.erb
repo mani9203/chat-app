@@ -2,13 +2,13 @@
   <div class="side-bar">
     <div class="side-bar-top">
       <div class="header-name">
-        <a href="#">mani</a>
+        <%= link_to current_user.name, edit_user_path(current_user) %>
       </div>
       <div class="create-room">
         <a href="#">チャットを作成する</a>
       </div>
     </div>
-
+    
     <div class="rooms">
       <%= render "side_bar" %>
       <div class="room">
