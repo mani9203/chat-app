@@ -13,12 +13,7 @@
       <%= render "side_bar" %>
       <div class="room">
         <div class="room-name">
-          <a href="#">a1</a>
-        </div>
-      </div>
-      <div class="room">
-        <div class="room-name">
-          <a href="#">a2</a>
+           <%= link_to @room.name, room_messages_path(@room) %>
         </div>
       </div>
     </div>
